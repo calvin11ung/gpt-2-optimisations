@@ -1,0 +1,7 @@
+transformers
+torch
+ctransformers
+evaluate
+huggingface-hub
+onnxruntime
+tokenizers
