@@ -24,4 +24,15 @@ bash ../examples/gpt-2/download-ggml-model.sh 1558M
 
 python3 benchmark.py -p -b -n 10 -bsz 5
 
-To view outputs, use -v flag
+usage: benchmark.py [-h] [-b] [-p] [-v] [-s] [-n NUM_BATCHES] [-bsz BATCH_SIZE]
+
+options:
+  -h, --help            show this help message and exit
+  -b, --benchmark       Run benchmarking
+  -p, --perplexity      Calculate perplexity
+  -v, --verbose         Print generated outputs
+  -s, --sort_batches    Sort batches
+  -n NUM_BATCHES, --num_batches NUM_BATCHES
+                        Number of batches to test on
+  -bsz BATCH_SIZE, --batch_size BATCH_SIZE
+                        Number of samples to run batched inference on
